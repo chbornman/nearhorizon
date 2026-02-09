@@ -5,6 +5,10 @@ info: |
   Near Horizon — Technology and design for resilient communities.
   nearhorizon.org
 class: text-center
+colorSchema: light
+fonts:
+  sans: DM Sans
+  serif: DM Serif Display
 drawings:
   persist: false
 transition: slide-left
