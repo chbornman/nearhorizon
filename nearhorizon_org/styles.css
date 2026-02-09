@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-deep: #1a2e1a;
+  --green-mid: #2d4a2d;
+  --green-light: #4a7c59;
+  --green-bright: #7cb87a;
+  --gold: #d4a35a;
+  --gold-light: #f0d08c;
+  --cream: #f5f0e8;
+  --cream-dim: #d9d2c7;
+  --text: #1a1a16;
+  --text-muted: #5c5a52;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+  background-color: var(--cream);
+  color: var(--text);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero {
+  max-width: 620px;
+  text-align: center;
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(124, 184, 122, 0.15) 0%,
+    rgba(212, 163, 90, 0.08) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--green-deep);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--green-mid);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.85rem 2.25rem;
+  background-color: var(--green-mid);
+  color: var(--cream);
+  text-decoration: none;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.cta:hover {
+  background-color: var(--green-light);
+  transform: translateY(-1px);
+}
+
+.cta:active {
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .glow {
+    width: 280px;
+    height: 280px;
+    top: -80px;
+  }
+}
