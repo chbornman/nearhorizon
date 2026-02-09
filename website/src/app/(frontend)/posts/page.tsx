@@ -11,14 +11,19 @@ export const metadata = {
 }
 
 export default async function PostsPage() {
-  const payload = await getPayload({ config: configPromise })
+  let posts = { docs: [] as any[] }
 
-  const posts = await payload.find({
-    collection: 'posts',
-    limit: 20,
-    sort: '-publishedAt',
-    where: { _status: { equals: 'published' } },
-  })
+  try {
+    const payload = await getPayload({ config: configPromise })
+    posts = await payload.find({
+      collection: 'posts',
+      limit: 20,
+      sort: '-publishedAt',
+      where: { _status: { equals: 'published' } },
+    })
+  } catch {
+    // Database tables may not exist yet on first deploy
+  }
 
   return (
     <div className="section-padding page-padding">

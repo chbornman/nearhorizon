@@ -11,14 +11,19 @@ export const metadata = {
 }
 
 export default async function ProjectsPage() {
-  const payload = await getPayload({ config: configPromise })
+  let projects = { docs: [] as any[] }
 
-  const projects = await payload.find({
-    collection: 'projects',
-    limit: 50,
-    sort: '-publishedAt',
-    where: { _status: { equals: 'published' } },
-  })
+  try {
+    const payload = await getPayload({ config: configPromise })
+    projects = await payload.find({
+      collection: 'projects',
+      limit: 50,
+      sort: '-publishedAt',
+      where: { _status: { equals: 'published' } },
+    })
+  } catch {
+    // Database tables may not exist yet on first deploy
+  }
 
   return (
     <div className="section-padding page-padding">

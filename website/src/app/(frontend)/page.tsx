@@ -23,22 +23,30 @@ const pillars = [
 ]
 
 export default async function HomePage() {
-  const payload = await getPayload({ config: configPromise })
+  let projects = { docs: [] as any[] }
+  let posts = { docs: [] as any[] }
 
-  const [projects, posts] = await Promise.all([
-    payload.find({
-      collection: 'projects',
-      limit: 3,
-      sort: '-publishedAt',
-      where: { _status: { equals: 'published' } },
-    }),
-    payload.find({
-      collection: 'posts',
-      limit: 3,
-      sort: '-publishedAt',
-      where: { _status: { equals: 'published' } },
-    }),
-  ])
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const [p, b] = await Promise.all([
+      payload.find({
+        collection: 'projects',
+        limit: 3,
+        sort: '-publishedAt',
+        where: { _status: { equals: 'published' } },
+      }),
+      payload.find({
+        collection: 'posts',
+        limit: 3,
+        sort: '-publishedAt',
+        where: { _status: { equals: 'published' } },
+      }),
+    ])
+    projects = p
+    posts = b
+  } catch {
+    // Database tables may not exist yet on first deploy
+  }
 
   return (
     <div>
