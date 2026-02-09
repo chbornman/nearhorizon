@@ -43,9 +43,14 @@ COPY --from=builder /app/public ./public
 # Media uploads directory
 RUN mkdir -p /app/public/media && chown -R nextjs:nodejs /app/public/media
 
-USER nextjs
+# Entrypoint script to fix volume permissions at startup
+RUN printf '#!/bin/sh\nchown -R nextjs:nodejs /app/public/media 2>/dev/null || true\nexec su-exec nextjs node server.js\n' > /app/entrypoint.sh && \
+    chmod +x /app/entrypoint.sh
+
+RUN apk add --no-cache su-exec
+
 EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME=0.0.0.0
 
-CMD ["node", "server.js"]
+CMD ["/app/entrypoint.sh"]
