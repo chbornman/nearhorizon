@@ -16,6 +16,8 @@ transition: slide-left
 
 <div class="nh-title">
 
+<img src="/nh-monogram.svg" class="nh-watermark" alt="" aria-hidden="true" />
+
 # Near Horizon
 
 Technology and design for resilient communities
@@ -25,21 +27,42 @@ Technology and design for resilient communities
 </div>
 
 <style>
+.nh-title {
+  position: relative;
+}
+.nh-watermark {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+  padding: 2em;
+  padding-left: 5em;
+}
 .nh-title h1 {
   font-size: 3.5em !important;
   font-weight: 700;
   color: #1a2e1a;
   margin-bottom: 0.25em;
+  position: relative;
+  z-index: 1;
 }
 .nh-title p {
   font-size: 1.4em;
   color: #4a7c59;
   margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
 }
 .nh-subtitle {
   font-size: 0.9em;
   color: #8c8985;
   letter-spacing: 0.08em;
+  position: relative;
+  z-index: 1;
 }
 </style>
 
@@ -226,7 +249,7 @@ layout: default
 
 </div>
 
-<div class="nh-pillar-note">Framework follows <strong>RegenAll's</strong> community-scale collective impact model</div>
+
 
 </div>
 
@@ -262,7 +285,7 @@ layout: default
 <span class="nh-tag energy"><ph-lightning class="nh-tag-icon" /> Energy</span>
 <h4>Household Energy Mapping</h4>
 <p>Using public data to identify households that would benefit most from energy efficiency work</p>
-<div class="nh-project-status">In progress w/ RegenAll</div>
+<div class="nh-project-status">In progress</div>
 </div>
 
 <div class="nh-project">
@@ -290,7 +313,7 @@ layout: default
 <span class="nh-tag energy"><ph-lightning class="nh-tag-icon" /> Energy</span>
 <h4>Data Center Heat Recovery</h4>
 <p>Strategy to build an advanced energy corridor recovering heat from proposed data centers</p>
-<div class="nh-project-status">In progress w/ RegenAll</div>
+<div class="nh-project-status">In progress</div>
 </div>
 
 </div>

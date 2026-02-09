@@ -8,6 +8,18 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
   turbopack: {},
+  async rewrites() {
+    return [
+      {
+        source: '/deck',
+        destination: '/deck/index.html',
+      },
+      {
+        source: '/deck/:path((?!assets).*)',
+        destination: '/deck/index.html',
+      },
+    ]
+  },
 }
 
 export default withPayload(nextConfig, { devBundleServerPackages: false })

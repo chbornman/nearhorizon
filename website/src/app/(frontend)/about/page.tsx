@@ -104,8 +104,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg text-foreground-secondary mb-4">
             Near Horizon is a physical design and prototyping facility in Lancaster, PA filled with
-            the people, tools, and resources to build a resilient future. Think IDEO, Alphabet&apos;s
-            X (the Moonshot Factory), and Otherlab -- but focused on community-scale challenges.
+            the people, tools, and resources to build a resilient future -- focused on
+            community-scale challenges.
           </p>
           <p className="text-foreground-secondary">
             People design and prototype solutions, fabricate projects, and test business models in
@@ -115,8 +115,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Pillars */}
+      {/* Origins */}
       <section className="section-padding page-padding bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-heading text-2xl text-foreground mb-6">Why We Started</h2>
+          <p className="text-foreground-secondary mb-4">
+            In the 1960s, Buckminster Fuller described humanity&apos;s task of piloting
+            &ldquo;Spaceship Earth&rdquo; -- making the world work for everyone without ecological
+            offense or disadvantage to anyone. We have never been better equipped with the knowledge,
+            technologies, and resources to achieve that goal. Yet technology often isn&apos;t serving
+            communities. Instead, innovation accelerates inequality and tears at the community fabric.
+          </p>
+          <p className="text-foreground-secondary mb-4">
+            In December 2025, Eric Sauder and Caleb Bornman founded what was originally called the
+            Local Resilience Lab -- a direct response to that gap between what&apos;s possible and
+            what&apos;s actually reaching the people who need it.
+          </p>
+          <p className="text-foreground-secondary">
+            The name Near Horizon is a call for optimism when the view ahead is haze. A focus on the
+            local, practical, achievable -- solutions communities can take up now. And yet, horizons
+            reach far into the distance.
+          </p>
+        </div>
+      </section>
+
+      {/* Pillars */}
+      <section className="section-padding page-padding">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl text-foreground mb-8">Resilience Pillars</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -149,7 +173,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="section-padding page-padding">
+      <section className="section-padding page-padding bg-surface">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl text-foreground mb-8">Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -174,22 +198,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Origins */}
-      <section className="section-padding page-padding bg-surface">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-heading text-2xl text-foreground mb-6">Origins</h2>
-          <p className="text-foreground-secondary mb-4">
-            Founded by Eric Sauder and Caleb Bornman in December 2025, Near Horizon began as the
-            Local Resilience Lab -- a response to the growing gap between technological capability
-            and community wellbeing.
-          </p>
-          <p className="text-foreground-secondary">
-            The name is multifold. A call for optimism when the view ahead is haze. A focus on the
-            local, practical, achievable -- solutions communities can take up now. And yet, horizons
-            reach far into the distance.
-          </p>
-        </div>
-      </section>
+
     </div>
   )
 }

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "rm -rf ../public/deck && slidev build --base /deck/ --out ../public/deck",
+    "build": "rm -rf ../../website/public/deck && slidev build --base /deck/ --out ../../website/public/deck",
     "export": "slidev export"
   },
   "dependencies": {

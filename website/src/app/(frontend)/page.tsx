@@ -12,6 +12,7 @@ import {
   Globe,
   Tree,
   HandHeart,
+  Presentation,
 } from '@phosphor-icons/react/dist/ssr'
 
 const pillars = [
@@ -73,7 +74,7 @@ export default async function HomePage() {
             We test and scale appropriate solutions for the challenges communities face today.
             Local, practical, achievable -- and reaching far into the distance.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Link
               href="/projects"
               className="inline-flex items-center px-6 py-3 bg-primary text-on-primary font-medium rounded-md hover:bg-primary-hover transition-colors"
@@ -81,11 +82,20 @@ export default async function HomePage() {
               View Projects
             </Link>
             <Link
-              href="/about"
+              href="/posts"
               className="inline-flex items-center px-6 py-3 border border-border text-foreground font-medium rounded-md hover:border-accent hover:text-accent transition-colors"
             >
-              Learn More
+              Blog
             </Link>
+            <a
+              href="/deck/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium rounded-md hover:border-accent hover:text-accent transition-colors"
+            >
+              <Presentation size={18} weight="bold" />
+              Pitch Deck
+            </a>
           </div>
         </div>
       </section>

@@ -14,7 +14,7 @@ Technology often isn't serving humanity. Instead we get flashy products misalign
 
 ## What is Near Horizon?
 
-Near Horizon is a physical design and prototyping facility in Lancaster, PA filled with the people, tools, and resources to build a resilient future. Think IDEO, Alphabet's X (the Moonshot Factory), and Otherlab -- but focused on community-scale challenges.
+Near Horizon is a physical design and prototyping facility in Lancaster, PA filled with the people, tools, and resources to build a resilient future -- focused on community-scale challenges.
 
 People design and prototype solutions, fabricate projects, and test business models in the physical space and in the real world. It attracts curious innovators and organizational collaborators who question existing paradigms and develop novel solutions. Through social media, the world is invited into the lab. Ideas are exchanged to grow necessary solutions with speed.
 
