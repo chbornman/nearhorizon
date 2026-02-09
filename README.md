@@ -127,7 +127,11 @@ nearhorizon/
 
 ## Origins
 
-Near Horizon was proposed by Eric Sauder in December 2025 as the Local Resilience Lab -- a response to the growing gap between technological capability and community wellbeing. The name "Near Horizon" reflects the focus on solutions that are within reach: practical, implementable, and close enough to see clearly.
+Eric Sauder and Caleb Bornman
+
+Near Horizon was proposed by Eric Sauder in December 2025 as the Local Resilience Lab -- a response to the growing gap between technological capability and community wellbeing.
+
+The name is multifold. A call for optimism when the view ahead is haze. A focus on the local, practical, achievable -- solutions communities can take up now. And yet, horizons reach far into the distance.
 
 ## License
 
