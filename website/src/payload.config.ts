@@ -4,6 +4,7 @@ import sharp from 'sharp'
 import path from 'path'
 import { buildConfig, PayloadRequest } from 'payload'
 import { fileURLToPath } from 'url'
+import { migrations } from './migrations'
 
 import { Media } from './collections/Media'
 import { Posts } from './collections/Posts'
@@ -41,7 +42,8 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
-    push: true,
+    push: process.env.NODE_ENV !== 'production',
+    prodMigrations: migrations,
   }),
   collections: [Posts, Projects, Media, Users],
   cors: process.env.NODE_ENV === 'production' ? [getServerSideURL()].filter(Boolean) : '*',
