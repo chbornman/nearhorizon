@@ -7,7 +7,7 @@
     <!-- N: left vertical -->
     <rect x="8" y="8" width="11" height="84"/>
     <!-- N: diagonal stroke -->
-    <polygon points="8,8 19,8 66,81 66,92 55,92 8,19"/>
+    <polygon points="8,8 19,8 66,84 66,92 55,92 8,16"/>
     <!-- Shared vertical: N-right / H-left -->
     <rect x="55" y="8" width="11" height="84"/>
     <!-- H: crossbar (the horizon) -->

@@ -9,7 +9,7 @@
   <!-- NH Monogram -->
   <g fill="#2d4a2d">
     <rect x="8" y="8" width="11" height="84"/>
-    <polygon points="8,8 19,8 66,81 66,92 55,92 8,19"/>
+    <polygon points="8,8 19,8 66,84 66,92 55,92 8,16"/>
     <rect x="55" y="8" width="11" height="84"/>
     <rect x="55" y="42" width="56" height="11"/>
     <rect x="100" y="8" width="11" height="84"/>
