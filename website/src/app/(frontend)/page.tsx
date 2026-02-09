@@ -110,9 +110,9 @@ export default async function HomePage() {
               return (
                 <div
                   key={pillar.name}
-                  className="p-5 bg-background rounded-lg border border-border flex flex-col items-center text-center gap-3"
+                  className="group p-5 bg-background rounded-lg border border-border flex flex-col items-center text-center gap-3 transition-all duration-300 hover:border-accent hover:[box-shadow:0_2px_0_0_var(--accent)]"
                 >
-                  <Icon size={28} weight="duotone" className="text-primary" />
+                  <Icon size={28} weight="duotone" className="text-primary transition-colors duration-300 group-hover:text-accent" />
                   <span className="text-sm font-medium text-foreground">{pillar.name}</span>
                 </div>
               )

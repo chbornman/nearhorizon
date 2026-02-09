@@ -257,9 +257,11 @@ layout: default
 .nh-slide h1 { color: #1a2e1a; border-bottom: 2px solid #d4a35a; padding-bottom: 0.3em; }
 .nh-pillars-slide { display: flex; flex-direction: column; justify-content: center; height: 100%; }
 .nh-pillar-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1em; margin-top: 1.5em; }
-.nh-pillar { background: #f7f4ed; border-radius: 8px; padding: 1em; text-align: center; border: 1px solid #e8e2d6; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.nh-pillar-icon { font-size: 2em; color: #4a7c59; margin-bottom: 0.2em; }
-.nh-pillar h4 { color: #2d4a2d; font-size: 0.85em; margin-bottom: 0.4em; }
+.nh-pillar { background: #f7f4ed; border-radius: 8px; padding: 1em; text-align: center; border: 1px solid #e8e2d6; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; cursor: default; }
+.nh-pillar:hover { border-color: #d4a35a; background: #faf6ef; box-shadow: 0 2px 0 0 #d4a35a; }
+.nh-pillar:hover .nh-pillar-icon { color: #d4a35a; }
+.nh-pillar-icon { font-size: 2em; color: #4a7c59; margin-bottom: 0.2em; transition: color 0.3s ease; }
+.nh-pillar h4 { color: #2d4a2d; font-size: 0.85em; margin-bottom: 0.4em; transition: color 0.3s ease; }
 .nh-pillar p { font-size: 0.72em; color: #5c5a52; line-height: 1.4; margin: 0; }
 .nh-pillar-note { margin-top: 1.5em; font-size: 0.8em; color: #8c8985; text-align: center; }
 </style>
