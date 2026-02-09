@@ -4,15 +4,23 @@ import { ThemeToggle } from '@/components/ThemeToggle'
 
 export const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto page-padding flex items-center justify-between h-16">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto flex items-center h-16">
+        {/* Left: Theme toggle */}
+        <div className="flex-1 flex items-center">
+          <ThemeToggle />
+        </div>
+
+        {/* Center: Title */}
         <Link
           href="/"
-          className="font-heading text-xl text-primary hover:text-primary-hover transition-colors"
+          className="font-heading text-2xl md:text-3xl text-primary hover:text-primary-hover transition-colors"
         >
           Near Horizon
         </Link>
-        <div className="flex items-center gap-6">
+
+        {/* Right: Nav */}
+        <div className="flex-1 flex items-center justify-end">
           <nav className="flex items-center gap-6">
             <Link
               href="/projects"
@@ -39,9 +47,16 @@ export const Header: React.FC = () => {
               Contact
             </Link>
           </nav>
-          <ThemeToggle />
         </div>
       </div>
+
+      {/* Horizon gradient */}
+      <div
+        className="h-[2px]"
+        style={{
+          background: 'linear-gradient(to right, transparent, var(--accent), transparent)',
+        }}
+      />
     </header>
   )
 }
