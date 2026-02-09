@@ -3,5 +3,10 @@ main = "src/index.ts"
 compatibility_date = "2025-02-08"
 account_id = "abf1e98d8765ffb8ab72f56905bd8e31"
 
+routes = [
+  { pattern = "nearhorizon.org/*", zone_name = "nearhorizon.org" },
+  { pattern = "www.nearhorizon.org/*", zone_name = "nearhorizon.org" },
+]
+
 [assets]
 directory = "./public"

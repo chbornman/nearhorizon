@@ -1,5 +1,13 @@
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
+    const url = new URL(request.url);
+
+    // Redirect www to bare domain
+    if (url.hostname === "www.nearhorizon.org") {
+      url.hostname = "nearhorizon.org";
+      return Response.redirect(url.toString(), 301);
+    }
+
     // Static assets in /public are served automatically by the [assets] config.
     // This worker handles any routes that don't match a static file.
     // Add API routes, redirects, or other logic here as the project grows.
