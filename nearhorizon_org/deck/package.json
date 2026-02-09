@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@slidev/cli": "^52.11.5",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "qrcode": "^1.5.4"
   }
 }
