@@ -55,7 +55,7 @@ export default async function HomePage() {
         {/* Monogram watermark */}
         <svg
           viewBox="0 0 130 100"
-          className="monogram-watermark absolute -right-12 top-1/2 -translate-y-1/2 h-[28rem] md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
+          className="monogram-watermark absolute right-24 top-1/2 -translate-y-1/2 h-[28rem] md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
           style={{ fill: 'var(--primary)' }}
           aria-hidden="true"
         >
