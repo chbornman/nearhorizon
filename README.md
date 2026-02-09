@@ -20,7 +20,7 @@ People design and prototype solutions, fabricate projects, and test business mod
 
 ## Resilience Pillars
 
-Our definitions of resilience follow [RegenAll's](https://regenall.org) work to build community-scale collective impact models:
+Our work is organized around five community-scale resilience pillars:
 
 | Pillar | Goal |
 |---|---|
@@ -115,14 +115,15 @@ Collaborating individuals and organizations maintain ownership of IP they create
 
 ## Monorepo Structure
 
-This repository houses the various software projects, documentation, and resources developed at Near Horizon. Projects live in their own directories and share common tooling where appropriate.
-
 ```
 nearhorizon/
-  README.md
-  projects/       # Individual project directories
-  docs/           # Shared documentation and research
-  shared/         # Common libraries and utilities
+  assets/              # Brand SVGs (monogram, wordmark, logo lockup, icon)
+  docs/                # Research and reference documents
+  nearhorizon_org/     # Slidev pitch deck (builds into website/public/deck/)
+  projects/            # Individual project directories
+  shared/              # Common libraries and utilities
+  website/             # Payload CMS + Next.js website (deployed on Railway)
+  STYLE_GUIDE.md       # Design system source of truth
 ```
 
 ## Origins
