@@ -55,8 +55,8 @@ export default async function HomePage() {
       <section className="section-padding page-padding relative overflow-hidden">
         {/* Monogram watermark */}
         <svg
-          viewBox="0 0 130 100"
-          className="monogram-watermark absolute right-24 top-1/2 -translate-y-1/2 h-[28rem] md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
+          viewBox="8 8 103 84"
+          className="monogram-watermark absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-24 top-12 md:top-1/2 md:-translate-y-1/2 max-w-[90%] md:max-w-none h-auto md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
           style={{ fill: 'var(--primary)' }}
           aria-hidden="true"
         >

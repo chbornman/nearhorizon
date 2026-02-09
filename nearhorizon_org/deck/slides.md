@@ -40,7 +40,7 @@ Technology and design for resilient communities
   pointer-events: none;
   z-index: 0;
   padding: 2em;
-  padding-left: 5em;
+  padding-left: 3em;
 }
 .nh-title h1 {
   font-size: 3.5em !important;

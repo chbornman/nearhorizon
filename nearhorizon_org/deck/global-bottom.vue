@@ -7,7 +7,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="back-home-arrow">
       <polyline points="15 18 9 12 15 6"/>
     </svg>
-    <svg viewBox="0 0 130 100" fill="currentColor" class="back-home-icon">
+    <svg viewBox="-0.5 0 122 100" fill="currentColor" class="back-home-icon">
       <rect x="8" y="8" width="11" height="84"/>
       <polygon points="8,8 19,8 66,84 66,92 55,92 8,16"/>
       <rect x="55" y="8" width="11" height="84"/>

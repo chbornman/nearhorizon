@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 0 122 100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 103 84" fill="none">
   <!--
-    NH Monogram — light variant for dark backgrounds
-    Color: Cream #f5f0e8 with brass accent
+    NH Monogram — tight crop, no padding
+    Shared stroke centered in viewBox
+    Color: Grove Green #2d4a2d (for use on light backgrounds)
   -->
-  <g fill="#f5f0e8">
+  <g fill="#2d4a2d">
     <!-- N: left vertical -->
     <rect x="8" y="8" width="11" height="84"/>
     <!-- N: diagonal stroke -->
