@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+ * Near Horizon Color System
+ *
+ * Dual primaries: Grove Green + Harvest Gold/Brass
+ * Green = brand identity, primary actions, navigation
+ * Brass = warm accent, highlights, callouts, emphasis
+ * ========================================================================== */
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  /* Backgrounds -- cream base, white surfaces */
+  --background: #f5f0e8;
+  --surface: #ffffff;
+  --elevated: #f7f4ed;
+  --hover: #ede8de;
+
+  /* Text */
+  --foreground: #1a1a16;
+  --foreground-secondary: #5c5a52;
+  --muted: #8c8985;
+  --on-primary: #f5f0e8;
+  --on-accent: #1a1a16;
+
+  /* Primary: Grove Green */
+  --primary: #2d4a2d;
+  --primary-hover: #4a7c59;
+  --primary-light: #e8f0e0;
+  --primary-muted: #9cc28a;
+
+  /* Accent: Harvest Gold / Brass */
+  --accent: #d4a35a;
+  --accent-hover: #b8893e;
+  --accent-light: #fdf6ec;
+  --accent-muted: #f0d08c;
+
+  /* Borders */
+  --border: #e8e2d6;
+  --border-secondary: #e0dbd0;
+  --border-active: #2d4a2d;
+
+  /* Semantic */
+  --success: #52c41a;
+  --error: #ff4d4f;
+  --warning: #d4a35a;
+  --info: #1677ff;
+
+  /* Pillar tags */
+  --pillar-energy-bg: #fef3c7;
+  --pillar-energy-text: #92400e;
+  --pillar-food-bg: #d1fae5;
+  --pillar-food-text: #065f46;
+  --pillar-carbon-bg: #e0e7ff;
+  --pillar-carbon-text: #3730a3;
+  --pillar-ecology-bg: #d5f5f6;
+  --pillar-ecology-text: #0e5e6f;
+  --pillar-community-bg: #fce7f3;
+  --pillar-community-text: #9d174d;
+
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Backgrounds -- layered dark surfaces with warm brass undertone */
+  --background: #1c1a16;
+  --surface: #24221d;
+  --elevated: #2d2a24;
+  --hover: #3b3730;
+
+  /* Text */
+  --foreground: #f7f5f0;
+  --foreground-secondary: #b8b4ab;
+  --muted: #8a8680;
+  --on-primary: #100f0d;
+  --on-accent: #100f0d;
+
+  /* Primary: Grove Green (lighter for dark bg) */
+  --primary: #7cb87a;
+  --primary-hover: #9cc28a;
+  --primary-light: rgba(74, 124, 89, 0.15);
+  --primary-muted: #4a7c59;
+
+  /* Accent: Brass (lighter for dark bg, warmer presence) */
+  --accent: #d4a366;
+  --accent-hover: #f0d08c;
+  --accent-light: rgba(212, 163, 102, 0.16);
+  --accent-muted: #a67c3d;
+
+  /* Borders -- warm tinted */
+  --border: #3d3829;
+  --border-secondary: #2d2a22;
+  --border-active: #7cb87a;
+
+  /* Semantic (lighter for dark bg) */
+  --success: #95de64;
+  --error: #ff7875;
+  --warning: #ffd591;
+  --info: #85a5ff;
+
+  /* Pillar tags (translucent bg, bright text) */
+  --pillar-energy-bg: rgba(251, 191, 36, 0.12);
+  --pillar-energy-text: #fbbf24;
+  --pillar-food-bg: rgba(52, 211, 153, 0.12);
+  --pillar-food-text: #34d399;
+  --pillar-carbon-bg: rgba(129, 140, 248, 0.12);
+  --pillar-carbon-text: #818cf8;
+  --pillar-ecology-bg: rgba(103, 232, 249, 0.12);
+  --pillar-ecology-text: #67e8f9;
+  --pillar-community-bg: rgba(244, 114, 182, 0.12);
+  --pillar-community-text: #f472b6;
+
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--muted);
+  }
+
+}
+
+/* Prose overrides — outside @layer for higher specificity than Tailwind typography */
+.prose {
+  --tw-prose-body: var(--foreground-secondary);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-counters: var(--muted);
+  --tw-prose-bullets: var(--muted);
+  --tw-prose-hr: var(--border);
+  --tw-prose-quotes: var(--foreground);
+  --tw-prose-quote-borders: var(--accent);
+  --tw-prose-code: var(--primary);
+  --tw-prose-pre-bg: var(--surface);
+  --tw-prose-pre-code: var(--foreground);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--border-secondary);
+}
+
+@layer components {
+  .page-padding {
+    @apply px-6 md:px-8 lg:px-12;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Pillar tag */
+  .pillar-tag {
+    @apply text-xs font-medium px-2.5 py-1 rounded-full;
+  }
+
+  /* Monogram watermark */
+  .monogram-watermark {
+    opacity: 0.18;
+  }
+  [data-theme='dark'] .monogram-watermark {
+    opacity: 0.10;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

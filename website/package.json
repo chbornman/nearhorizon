@@ -1,0 +1,67 @@
+{
+  "name": "nearhorizon-website",
+  "version": "0.1.0",
+  "description": "Near Horizon website - project showcases and blog",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--no-deprecation next build --webpack",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --webpack -p 3000",
+    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "lint:fix": "cross-env NODE_OPTIONS=--no-deprecation next lint --fix",
+    "migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "3.61.0",
+    "@payloadcms/next": "3.61.0",
+    "@payloadcms/plugin-redirects": "3.61.0",
+    "@payloadcms/plugin-search": "3.61.0",
+    "@payloadcms/plugin-seo": "3.61.0",
+    "@payloadcms/richtext-lexical": "3.61.0",
+    "@payloadcms/ui": "3.61.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@radix-ui/react-slot": "^1.2.3",
+    "blurhash": "^2.0.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "fast-blurhash": "^1.1.4",
+    "graphql": "^16.11.0",
+    "next": "^16.0.0",
+    "payload": "3.61.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "resend": "^6.9.1",
+    "sharp": "^0.34.4",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "22.5.4",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "15.4.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": "^18.20.2 || >=20.9.0",
+    "pnpm": "^9 || ^10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 50" fill="none">
+  <!--
+    NEAR HORIZON wordmark — light variant for dark backgrounds
+    Color: Cream #f5f0e8
+  -->
+  <text
+    x="0"
+    y="36"
+    fill="#f5f0e8"
+    font-family="'DM Sans', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="32"
+    font-weight="600"
+    letter-spacing="0.18em"
+  >NEAR HORIZON</text>
+</svg>

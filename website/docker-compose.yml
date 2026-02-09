@@ -1,0 +1,25 @@
+# Local Development Environment
+# Start with: docker compose up -d
+# Stop with: docker compose down
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: nearhorizon-postgres
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: nearhorizon
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres-data:

@@ -1,0 +1,70 @@
+:root {
+  // Near Horizon Grove Green theme for Payload admin
+  // Dark admin UI with green brand accent
+  --payload-color-base-0: 60 4% 7%;
+  --payload-color-base-50: 60 4% 9%;
+  --payload-color-base-100: 60 4% 11%;
+  --payload-color-base-150: 60 4% 13%;
+  --payload-color-base-200: 60 4% 15%;
+  --payload-color-base-250: 60 4% 17%;
+  --payload-color-base-300: 60 4% 19%;
+  --payload-color-base-350: 60 4% 21%;
+  --payload-color-base-400: 40 3% 97%;
+  --payload-color-base-450: 40 3% 95%;
+  --payload-color-base-500: 40 3% 93%;
+  --payload-color-base-550: 40 3% 91%;
+  --payload-color-base-600: 40 3% 89%;
+  --payload-color-base-650: 40 3% 87%;
+  --payload-color-base-700: 40 3% 85%;
+  --payload-color-base-750: 40 3% 83%;
+  --payload-color-base-800: 40 3% 81%;
+  --payload-color-base-850: 40 3% 79%;
+  --payload-color-base-900: 40 3% 77%;
+  --payload-color-base-950: 40 3% 75%;
+  --payload-color-base-1000: 40 3% 73%;
+
+  --payload-color-elevation-0: 60 4% 7%;
+  --payload-color-elevation-50: 60 4% 9%;
+  --payload-color-elevation-100: 60 4% 11%;
+  --payload-color-elevation-150: 60 4% 13%;
+  --payload-color-elevation-200: 60 4% 15%;
+  --payload-color-elevation-250: 60 4% 17%;
+  --payload-color-elevation-300: 60 4% 19%;
+  --payload-color-elevation-350: 60 4% 21%;
+
+  --payload-color-theme-elevation-bg: 60 4% 7%;
+  --payload-color-theme-elevation-50: 60 4% 9%;
+  --payload-color-theme-elevation-100: 60 4% 11%;
+  --payload-color-theme-elevation-150: 60 4% 13%;
+  --payload-color-theme-elevation-200: 60 4% 15%;
+  --payload-color-theme-elevation-250: 60 4% 17%;
+  --payload-color-theme-elevation-300: 60 4% 19%;
+  --payload-color-theme-elevation-350: 60 4% 21%;
+
+  --payload-color-theme-input-bg: 60 4% 13%;
+  --payload-color-theme-input-border: 60 4% 21%;
+
+  --payload-color-theme-text: 40 3% 97%;
+
+  // Grove Green brand accent
+  --payload-color-brand: 120 24% 24%;
+
+  --payload-border-radius-m: 0.2rem;
+  --payload-border-radius-s: calc(0.2rem - 2px);
+}
+
+[data-theme='dark'] {
+  --payload-color-theme-elevation-bg: 60 4% 7%;
+  --payload-color-theme-elevation-50: 60 4% 9%;
+  --payload-color-theme-elevation-100: 60 4% 11%;
+  --payload-color-theme-elevation-150: 60 4% 13%;
+  --payload-color-theme-elevation-200: 60 4% 15%;
+  --payload-color-theme-elevation-250: 60 4% 17%;
+  --payload-color-theme-elevation-300: 60 4% 19%;
+  --payload-color-theme-elevation-350: 60 4% 21%;
+
+  --payload-color-theme-input-bg: 60 4% 13%;
+  --payload-color-theme-input-border: 60 4% 21%;
+
+  --payload-color-theme-text: 40 3% 97%;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!--
+    NH Favicon / App Icon
+    Square format, padded, Grove Green on cream background
+    Works at 16x16, 32x32, 192x192
+  -->
+  <rect width="120" height="120" rx="16" fill="#2d4a2d"/>
+  <g fill="#f5f0e8">
+    <rect x="14" y="18" width="10" height="84"/>
+    <polygon points="14,18 24,18 67,94 67,102 57,102 14,26"/>
+    <rect x="57" y="18" width="10" height="84"/>
+    <rect x="57" y="50" width="50" height="10"/>
+    <rect x="97" y="18" width="10" height="84"/>
+  </g>
+</svg>
