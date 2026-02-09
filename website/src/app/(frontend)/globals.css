@@ -180,7 +180,7 @@
 
   /* Monogram watermark */
   .monogram-watermark {
-    opacity: 0.18;
+    opacity: 0.20;
   }
   [data-theme='dark'] .monogram-watermark {
     opacity: 0.10;
@@ -190,5 +190,12 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-primary-light-section {
+    background-color: var(--primary-light);
+  }
+  [data-theme='dark'] .bg-primary-light-section {
+    background-color: var(--background);
   }
 }

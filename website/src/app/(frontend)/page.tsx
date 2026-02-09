@@ -13,6 +13,8 @@ import {
   Tree,
   HandHeart,
   Presentation,
+  Article,
+  Rocket,
 } from '@phosphor-icons/react/dist/ssr'
 
 const pillars = [
@@ -53,20 +55,34 @@ export default async function HomePage() {
     <div>
       {/* Hero */}
       <section className="section-padding page-padding relative overflow-hidden">
-        {/* Monogram watermark */}
-        <svg
-          viewBox="8 8 103 84"
-          className="monogram-watermark absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-24 top-12 md:top-1/2 md:-translate-y-1/2 max-w-[90%] md:max-w-none h-auto md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
-          style={{ fill: 'var(--primary)' }}
-          aria-hidden="true"
-        >
-          <rect x="8" y="8" width="11" height="84" />
-          <polygon points="8,8 19,8 66,84 66,92 55,92 8,16" />
-          <rect x="55" y="8" width="11" height="84" />
-          <rect x="55" y="42" width="56" height="11" />
-          <rect x="100" y="8" width="11" height="84" />
-        </svg>
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative">
+          {/* Monogram watermark — green tint backing */}
+          <svg
+            viewBox="8 8 103 84"
+            className="absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-0 top-12 md:top-1/2 md:-translate-y-1/2 max-w-[90%] md:max-w-none h-auto md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
+            style={{ fill: 'var(--primary-light)', opacity: 0.2 }}
+            aria-hidden="true"
+          >
+            <rect x="8" y="8" width="11" height="84" />
+            <polygon points="8,8 19,8 66,84 66,92 55,92 8,16" />
+            <rect x="55" y="8" width="11" height="84" />
+            <rect x="55" y="42" width="56" height="11" />
+            <rect x="100" y="8" width="11" height="84" />
+          </svg>
+          {/* Monogram watermark — green layer */}
+          <svg
+            viewBox="8 8 103 84"
+            className="monogram-watermark absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:right-0 top-12 md:top-1/2 md:-translate-y-1/2 max-w-[90%] md:max-w-none h-auto md:h-[36rem] lg:h-[44rem] w-auto pointer-events-none select-none"
+            style={{ fill: 'var(--primary)' }}
+            aria-hidden="true"
+          >
+            <rect x="8" y="8" width="11" height="84" />
+            <polygon points="8,8 19,8 66,84 66,92 55,92 8,16" />
+            <rect x="55" y="8" width="11" height="84" />
+            <rect x="55" y="42" width="56" height="11" />
+            <rect x="100" y="8" width="11" height="84" />
+          </svg>
+          <div className="relative z-10">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 max-w-3xl">
             Building resilient communities through technology and design
           </h1>
@@ -76,15 +92,10 @@ export default async function HomePage() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/projects"
-              className="inline-flex items-center px-6 py-3 bg-primary text-on-primary font-medium rounded-md hover:bg-primary-hover transition-colors"
-            >
-              View Projects
-            </Link>
-            <Link
               href="/posts"
-              className="inline-flex items-center px-6 py-3 border border-border text-foreground font-medium rounded-md hover:border-accent hover:text-accent transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium rounded-md hover:border-accent hover:text-accent transition-colors"
             >
+              <Article size={18} weight="bold" />
               Blog
             </Link>
             <a
@@ -96,6 +107,14 @@ export default async function HomePage() {
               <Presentation size={18} weight="bold" />
               Pitch Deck
             </a>
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-on-accent font-medium rounded-md hover:bg-accent-hover transition-colors"
+            >
+              <Rocket size={18} weight="bold" />
+              View Projects
+            </Link>
+           </div>
           </div>
         </div>
       </section>
@@ -123,7 +142,7 @@ export default async function HomePage() {
 
       {/* Featured Projects */}
       {projects.docs.length > 0 && (
-        <section className="section-padding page-padding">
+        <section className="section-padding page-padding bg-primary-light-section">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center justify-between mb-8">
               <h2 className="font-heading text-2xl text-foreground">Recent Projects</h2>
