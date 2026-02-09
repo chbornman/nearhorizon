@@ -41,7 +41,7 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URL || '',
     },
-    push: process.env.NODE_ENV !== 'production',
+    push: true,
   }),
   collections: [Posts, Projects, Media, Users],
   cors: process.env.NODE_ENV === 'production' ? [getServerSideURL()].filter(Boolean) : '*',
