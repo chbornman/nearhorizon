@@ -1,0 +1,7 @@
+name = "nearhorizon-org"
+main = "src/index.ts"
+compatibility_date = "2025-02-08"
+account_id = "abf1e98d8765ffb8ab72f56905bd8e31"
+
+[assets]
+directory = "./public"
