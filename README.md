@@ -126,6 +126,10 @@ nearhorizon/
   STYLE_GUIDE.md       # Design system source of truth
 ```
 
+## YouTube
+
+Near Horizon has a YouTube channel at [youtube.com/@nearhorizon](https://youtube.com/@nearhorizon), created with the email info@nearhorizon.org.
+
 ## Origins
 
 Founded by Eric Sauder and Caleb Bornman in December 2025, Near Horizon began as the Local Resilience Lab -- a response to the growing gap between technological capability and community wellbeing.

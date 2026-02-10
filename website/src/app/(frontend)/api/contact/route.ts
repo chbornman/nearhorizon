@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { siteConfig } from '@/config/site'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -18,8 +19,8 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-      from: 'Near Horizon <info@nearhorizon.org>',
-      to: 'info@nearhorizon.org',
+      from: `${siteConfig.name} <${siteConfig.contactEmail}>`,
+      to: siteConfig.contactEmail,
       replyTo: email,
       subject: `Contact form: ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,

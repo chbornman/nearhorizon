@@ -2,6 +2,7 @@ import React from 'react'
 import { MapPin, Envelope, ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 import { ContactForm } from '@/components/ContactForm'
+import { siteConfig } from '@/config/site'
 
 export const metadata = {
   title: 'Contact',
@@ -42,10 +43,10 @@ export default function ContactPage() {
               <h2 className="text-lg font-medium text-foreground">Email</h2>
             </div>
             <a
-              href="mailto:info@nearhorizon.org"
+              href={`mailto:${siteConfig.contactEmail}`}
               className="text-primary hover:text-primary-hover transition-colors"
             >
-              info@nearhorizon.org
+              {siteConfig.contactEmail}
             </a>
           </div>
         </div>

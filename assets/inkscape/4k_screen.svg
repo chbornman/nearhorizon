@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3840"
+   height="2160"
+   viewBox="0 0 3840 2160"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="4k_screen.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.15269547"
+     inkscape:cx="1725.6569"
+     inkscape:cy="1427.6782"
+     inkscape:window-width="1303"
+     inkscape:window-height="1071"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6">
+    <inkscape:grid
+       id="grid4"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e59422;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="0.87576032"
+         id="stop2" />
+    </linearGradient>
+    <rect
+       x="633.55709"
+       y="613.65477"
+       width="2729.9344"
+       height="1950.4271"
+       id="rect4" />
+    <rect
+       x="464.38739"
+       y="683.31288"
+       width="2859.2995"
+       height="942.043"
+       id="rect3" />
+    <rect
+       x="2232.3765"
+       y="1303.6018"
+       width="278.63244"
+       height="328.38823"
+       id="rect2" />
+    <rect
+       x="812.67794"
+       y="643.50825"
+       width="1277.0653"
+       height="723.11751"
+       id="rect1" />
+    <rect
+       x="633.55707"
+       y="613.65479"
+       width="2729.9343"
+       height="1950.4271"
+       id="rect4-7" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="1846.6675"
+       y1="1857.333"
+       x2="1846.6675"
+       y2="494.66309"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <g
+       id="g4"
+       transform="matrix(2.8179973,0,0,2.2689171,-3283.9041,-1588.242)"
+       style="fill:url(#linearGradient2);fill-opacity:1">
+      <rect
+         style="fill:url(#linearGradient2);fill-opacity:1;stroke:none;stroke-width:29.8943;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7"
+         width="1362.6698"
+         height="951.99603"
+         x="1165.3326"
+         y="700" />
+    </g>
+  </g>
+  <g
+     inkscape:label="background solid"
+     inkscape:groupmode="layer"
+     id="g6"
+     style="display:inline">
+    <g
+       id="g5"
+       transform="matrix(2.8179973,0,0,2.2689171,-3283.9041,-1588.242)"
+       style="fill:url(#linearGradient2);fill-opacity:1">
+      <rect
+         style="fill:#e0f4cb;fill-opacity:1;stroke:none;stroke-width:29.8943;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5"
+         width="1362.6698"
+         height="951.99603"
+         x="1165.3326"
+         y="700" />
+    </g>
+  </g>
+  <g
+     id="g7"
+     style="fill:#2d4a2d;fill-opacity:1;stroke:none;stroke-width:5.33463;stroke-dasharray:none;stroke-opacity:1"
+     transform="matrix(2.8179973,0,0,2.2689171,-3283.909,-1588.2377)"
+     inkscape:label="NH">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1308.93px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';writing-mode:lr-tb;direction:ltr;fill:#2d4a2d;fill-opacity:1;stroke:none;stroke-width:5.33463;stroke-dasharray:none;stroke-opacity:1"
+       x="1063.1577"
+       y="1655.8306"
+       id="text4"
+       transform="scale(1.0023212,0.99768419)"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';fill:#2d4a2d;fill-opacity:1;stroke:none;stroke-width:5.33463;stroke-dasharray:none;stroke-opacity:1"
+         x="1063.1577"
+         y="1655.8306">N</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';fill:#2d4a2d;fill-opacity:1;stroke:none;stroke-width:5.33463;stroke-dasharray:none;stroke-opacity:1"
+         x="1063.1577"
+         y="3291.9932"
+         id="tspan5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1308.93px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';writing-mode:lr-tb;direction:ltr;fill:#2d4a2d;fill-opacity:1;stroke:none;stroke-width:5.33463;stroke-dasharray:none;stroke-opacity:1"
+       x="1679.1975"
+       y="1655.8306"
+       id="text7"
+       transform="scale(1.0023212,0.99768419)"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="fill:#2d4a2d;fill-opacity:1;stroke:none;stroke-width:5.33463;stroke-dasharray:none;stroke-opacity:1"
+         x="1679.1975"
+         y="1655.8306">H</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="blur" />
+</svg>
